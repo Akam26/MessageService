@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_selector"
+    tools:context="com.example.akam.s198596_s198574.Register"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navn:"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+        <requestFocus />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/name"
+        android:inputType="text"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.14" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tlf:"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <requestFocus />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/phone"
+        android:layout_marginTop="5dp"
+        android:inputType="phone"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bursdag:"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <requestFocus />
+
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:id="@+id/birth"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.14" />-->
+
+
+    <!--<EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/phone"
+        android:text="Tlf:"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/phone"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:text="Bursdag:"
+        android:id="@+id/birth"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />-->
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_marginTop="0dp"
+        android:calendarViewShown="false"
+        android:id="@+id/birth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SettInn"
+        android:id="@+id/settinn"
+        android:layout_below="@+id/birth"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="52dp"
+        android:onClick="SettInn"/>
+
+   <!-- <EditText
+        android:id="@+id/visInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <requestFocus />
+    </EditText>-->
+</LinearLayout>

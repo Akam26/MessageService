@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_selector"
+    tools:context="com.example.akam.s198596_s198574.Register"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Navn:"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <requestFocus />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/eNavn"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.14" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tlf:"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <requestFocus />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:id="@+id/ePhone"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_weight="0.14" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bursdag:"
+        android:layout_marginTop="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <requestFocus />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_marginTop="0dp"
+        android:calendarViewShown="false"
+        android:id="@+id/eBirth" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Oppdater"
+        android:id="@+id/oppdater"
+        android:layout_below="@+id/birth"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        android:onClick="Oppdatering" />
+
+</LinearLayout>

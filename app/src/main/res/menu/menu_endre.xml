@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.akam.s198596_s198574.Endre">
+    <item
+        android:id="@+id/slette"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="Slett"
+        android:icon="@drawable/soppel"/>
+
+    <!--<item
+        android:id="@+id/oppdater"
+        android:title="Oppdater"
+        android:showAsAction="always"/>-->
+</menu>
